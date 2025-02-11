@@ -1,0 +1,31 @@
+body {
+    font-family: "Arial", sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    list-style: none;
+    padding: 0 156px;
+    max-width: calc(3 * 360px + 2 * 24px);
+    justify-content: space-between;
+}
+
+.gallery__item {
+    flex-basis: calc(33.333% - 16px);
+}
+
+.gallery__image {
+    display: block;
+    width: 360px;
+    height: 200px;
+    cursor: pointer;
+    border-radius: 2px;
+}
